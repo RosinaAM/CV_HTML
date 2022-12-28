@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact Me</title>
+    </head>
+
+    <body>
+        <h1>Contact Me</h1>
+        <p>Below, you can find a list of my fictional contact details:</p>
+        <ul>
+            <li>📧: <a href="mailto:myemail@gmail.com">myemail@gmail.com</a></li>
+            <li>📱: +31 6 12345678</li>
+            <li>🏠: The Netherlands</li>
+        </ul>
+        <hr>
+        <h3>Send me a message! 🙂</h3>
+        <form action="mailto:myemail@gmail.com" method="post" enctype="text/plain">
+        <!-- the HTML "class" attribute (which we delete for now) is used to specify a class for an HTML element. Multiple HTML elements can share the same class. 
+        For more information, check: https://www.w3schools.com/html/html_classes.asp -->
+        <!-- the "action" attribute indicates what should happen when the user clicks "submit". When filled with "index.html", it simply states to take the
+        user back to the index.html page. Therefore, we change it to "mailto:myemail@gmail.com", so that the input is sent to my email address -->
+        <!-- the "method="post"" attribute simply means that we transfer what the user has filled in the fields to user's email -->
+        <!-- the "enctype" attribute on top of the page specifies that our website is encoded in UTF-8. Here, with "text/plain", we're saying that the data
+        in our form are encoded in plain text. Then, when it launches the mail app, it won't have these funny programming signs such as "%", "+", numbers, etc.
+        What will remain, though, is the name of the input element, i.e., "yourName =", "yourEmail =", "yourMessage =" -->
+            <label>Your Name:</label>
+            <input type="text" name="yourName"><br>
+            <label>Your E-mail:</label>
+            <input type="email" name="yourEmail"><br>
+            <label>Your Message:</label><br>
+            <textarea name="yourMessage" cols="30" rows="10"></textarea><br>
+            <input type="submit">
+        <!-- the example above is a very very basic bit of functionality that we can get in our website without yet understanding JavaScript. So once we 
+            get to the JavaScript module, we're going to come back and revisit forms and we're going to unleash the full power of HTML forms.-->
+        </form>
+    </body>
+
+</html>

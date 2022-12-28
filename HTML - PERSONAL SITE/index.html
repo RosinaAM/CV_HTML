@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Rosina's Personal Site 🏄🏼</title>
+    </head>
+
+    <body>
+        <table cellspacing="20"> <!-- "cellspacing" is deprecated -->
+            <tr>
+                <td><img src="images/surf.png" alt="Rosina Profile Picture"> <!-- you can also use the image source URL, but if the server of that source goes down, 
+                    the browser loading your website cannot download that picture anymore. So to be safe, we use the locally stored image.--></td>
+                <td><h1>Rosina Meijnen</h1>
+                    <p>Data Intelligence Consultant at <a href="https://www.cleverrepublic.com">Clever Republic</a> | <em>Connecting the <strong>dots.</strong></em></p>
+                    <p>I am a Collibra 🟢 Solution Architect.</p> <!-- on Mac, write emojis by pressing the "fn" button once, or "control + command + space"-->
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <h3>Schools and Education</h3>
+        <ul> <!-- "ul" stands for "unordered list", with bullets -->
+             <!-- "ol" stands for "ordered list", with, i.e., 1/2/3, a/b/c, etc. -->
+            <li>Elementary School: CBS 't Fundament, Loenen aan de Vecht</li>
+            <li>High School: RSG Broklede, Breukelen</li>
+            <li><em><strong>Gap Year: </strong>Traveling to Bali (Indonesia) & Italy</em></li>
+            <li>Bachelor of Science: Economics & Business Economics, Utrecht University
+                <!-- Look, the closing </li> tag is not placed here! -->
+                <ul>
+                    <li><em><strong>Exchange: </strong>Nova School of Business and Economics</em>
+                        <!-- Same for the second nested unordered list! -->
+                        <ul>
+                            <li>Favorite Course: Operations Management</li>
+                        </ul>
+                    </li> <!-- Closing </li> tag for the li that contains the third unordered list -->
+                </ul>
+            </li> <!-- Here is the closing </li> tag for the second unordered list-->
+            <li>Master of Science: <a href="https://www.rsm.nl/education/master/msc-programmes/msc-strategic-management/">Strategic Management</a>, 
+                Rotterdam School of Management, Erasmus University Rotterdam, 2020-2022</li>
+            <li>Master of Science: <a href="https://www.eur.nl/en/master/data-science-and-marketing-analytics">Data Science & Marketing Analytics</a>, 
+                Erasmus School of Economics, Erasmus University Rotterdam, 2021-2022</li>
+            <li><a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/">The Complete 2023 Web Development Bootcamp</a>, 2022-2023</li>
+        </ul>
+        <hr>
+        <!-- using a table, you can make sure that certain text displayed aligns nicely at the same indent: -->
+        <h3>Work Experience</h3>
+        <table cellspacing="10"> <!-- "cellspacing" is deprecated -->
+            <thead>
+                <tr>
+                    <th>Dates</th>
+                    <th>Work</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2022-Present</td>
+                    <td>Data Intelligence Consultant at Clever Republic</td>
+                </tr>
+                <tr>
+                    <td>2022-Present</td>
+                    <td>Technical Data Management Consultant at PGGM</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h3>Skills</h3>
+        <!-- <table> -->
+        <!-- this is a nested table, wherein you have tables in tables (i.e., multiple (3) columns with multiple (2) rows) -->
+        <!-- it is not very recommended to use "styling" like this, as we can better use CSS for it -->
+        <!--     <tbody> 
+                <tr>
+                    <td> -->
+        <!--                <table cellspacing="10"> <!-- "cellspacing" is deprecated -->
+        <!--                    <tr>
+                                <td>R</td>
+                                <td>⭐️⭐️⭐️⭐️</td>
+                            </tr>
+                            <tr>
+                                <td>Design</td>
+                                <td>⭐️⭐️⭐️⭐️</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table cellspacing="10"> <!-- "cellspacing" is deprecated -->
+        <!--                    <tbody>
+                                <tr>
+                                    <td>Web Development</td>
+                                    <td>⭐️⭐️⭐️</td>
+                                </tr>
+                                <tr>
+                                    <td>Sports</td>
+                                    <td>⭐️⭐️⭐️⭐️⭐️</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>
+                        <table cellspacing="10"> <!-- "cellspacing" is deprecated -->
+        <!--                    <tbody>
+                                <tr>
+                                    <td>English</td>
+                                    <td>⭐️⭐️⭐️⭐️⭐️</td> 
+                                </tr>
+                                <tr>
+                                    <td>Dutch</td>
+                                    <td>⭐️⭐️⭐️⭐️⭐️</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- ... therefore, we can also use the following code to create this table: -->
+        <table cellspacing="10"> <!-- "cellspacing" is deprecated -->
+            <tbody>
+                <tr>
+                    <td>R</td>
+                    <td>⭐️⭐️⭐️⭐️</td>
+                    <td>Web Development</td>
+                    <td>⭐️⭐️⭐️</td>
+                    <td>English</td>
+                    <td>⭐️⭐️⭐️⭐️⭐️</td>
+                </tr>
+                <tr>
+                    <td>Design</td>
+                    <td>⭐️⭐️⭐️</td>
+                    <td>Sports</td>
+                    <td>⭐️⭐️⭐️⭐️⭐️</td> 
+                    <td>Dutch</td>
+                    <td>⭐️⭐️⭐️⭐️⭐️</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h3><a href="hobbies.html">My Hobbies</a></h3>
+        <h3><a href="contact-me.html">Contact Me</a></h3>
+    </body>
+
+</html>
